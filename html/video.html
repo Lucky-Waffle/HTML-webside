@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marius Eriksen">
+    <title>BugSpot</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--- henter font fra google ---> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <!--- henter icons fra https://fontawesome.com/v4/icons/ --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li> 
+                <li><a href="../html/video.html">VIDEO</a></li> <!-- med video (kul youtube video inntil den ekte kommer) -->
+                <li><a href="../html/resources.html">RESOURCES</a></li> <!-- link til Devops --> <!-- (DOCUMENTS) link til å laste ned dokumentene i pdf -->
+                <li><a href="../html/contact.html">CONTACT</a></li> <!-- kontakt skjema -->
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Videos</h1>
+    <p>Related videos associated with the application</p>
+</section>
+
+<!--- Video content --->
+<section class="video-con">
+    <div class="row">
+        <div class="video-col">
+            <h1>Installation Guide</h1>
+            <p>Please follow this guide:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NCQN6BZqF78" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="video-col">
+            <h1>Management User Guide</h1>
+            <p>Please follow this guide:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yvMBUUXZDIQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="video-col">
+            <h1>Report User Guide</h1>
+            <p>Please follow this guide:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h9h1wY_r8Dk" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="video-col">
+            <h1>Status User Guide</h1>
+            <p>Please follow this guide:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xODaXG4lZmQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+    </div>
+</section>
+
+<!--- Footer --->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The world's leading bug reporting application. <br> Contact us today and let your customers work for you from now on.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/people/Universitetet-i-S%C3%B8r%C3%B8st-Norge-campus-Porsgrunn/100057070286064/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/uporsgrunn"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/usn.no/"><i class="fa fa-instagram"></i></a>
+        <a href="https://no.linkedin.com/school/usnno/"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Marius, Justinas and Ole Magnus</p>
+</section>
+
+<!--- JavaScript for Toggle Menu --->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
